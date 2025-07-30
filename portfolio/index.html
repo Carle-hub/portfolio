@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carl RANDRANTO - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Canvas pour l'animation de particules -->
+    <canvas id="particles-canvas"></canvas>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">CR</div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#projets">Réalisations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle">🌙</button>
+        </nav>
+    </header>
+    <!-- Section Hero -->
+    <section id="accueil" class="hero">
+        <div class="about-photo">
+            <img src="moi.png" alt="Photo de Carl RANDRANTO" loading="lazy">
+        </div>
+        <div class="hero-content">
+            <h1>Carl RANDRANTO</h1>
+            <p class="subtitle">Développeur Full Stack & Designer</p>
+            <p class="description">
+                Passionné par la création d'expériences numériques exceptionnelles,
+                je conçois et développe des applications web modernes avec un focus
+                sur la performance et l'expérience utilisateur.
+            </p>
+            <a href="#projets" class="cta-button">Découvrir mes Réalisations</a>
+        </div>
+    </section>
+    <section id="apropos" class="section">
+        <h2 class="section-title">À propos de moi</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    Avec plus de 3 ans d'expérience dans le développement web,
+                    je me spécialise dans la création d'applications Vue/Node.js
+                    performantes et évolutives. Mon approche combine expertise technique
+                    et sensibilité design pour créer des solutions qui font la différence.
+                </p>
+                <p style="margin-top: 1.5rem;">
+                    J'aime relever de nouveaux défis et explorer les dernières technologies
+                    pour offrir des expériences utilisateur mémorables.
+                </p>
+                <div class="skills">
+                    <!-- Langages de programmation -->
+                    <div class="skill">
+                        <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript Logo" width="30" height="30">
+                        <span>JavaScript/TypeScript</span>
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python Logo" width="30" height="30">
+                        <span>Python</span>
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn.simpleicons.org/php/777BB4" alt="PHP Logo" width="30" height="30">
+                        <span>PHP</span>
+                    </div>
+                    <!-- Frameworks et bibliothèques -->
+                    <div class="skill">
+                        <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React Logo" width="30" height="30">
+                        <span>React</span>
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn.simpleicons.org/django/092E20" alt="Django Logo" width="30" height="30">
+                        <span>Django</span>
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn.simpleicons.org/laravel/FF2D20" alt="Laravel Logo" width="30" height="30">
+                        <span>Laravel</span>
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn.simpleicons.org/vuedotjs/4FC08D" alt="Vue.js Logo" width="30" height="30">
+                        <span>Vue.js</span>
+                    </div>
+                    <!-- Bases de données -->
+                    <div class="skill">
+                        <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL Logo" width="30" height="30">
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn.simpleicons.org/mongodb/47A248" alt="MongoDB Logo" width="30" height="30">
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="Node.js Logo" width="30" height="30">
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL Logo" width="30" height="30">
+                        <span>PostgreSQL</span>
+                    </div>
+                    <!-- CMS et autres -->
+                    <div class="skill">
+                        <img src="https://cdn.simpleicons.org/wordpress/21759B" alt="WordPress Logo" width="30" height="30">
+                        <span>WordPress</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Projets -->
+    <section id="projets" class="section">
+        <h2 class="section-title">Mes Réalisations</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>ALFRH</h3>
+                <p>ALFRH est une application web de gestion des ressources humaines permettant de gérer les employés, les absences, les congés, les retards, et d'autres fonctionnalités RH essentielles.</p>
+                <div class="project-tags">
+                    <span class="tag">Blade</span>
+                    <span class="tag">Laravel</span>
+                    <span class="tag">MySql</span>
+                    <span class="tag">Alpine.js</span>
+                </div>
+                <a href="https://github.com/Carle-hub/ALFRH" class="project-link">Voir le projet →</a>
+            </div>
+            <div class="project-card">
+                <h3>Detection de Cancer de Poumon</h3>
+                <p>Detection de cancer de poumon par la combinaison de MobileSAM et l'algorithme Kmeans.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Machine Learning & Deep Learning</span>
+                    <span class="tag">scikit-learn, PyTorch, NumPy, pandas, OpenCV</span>
+                </div>
+                <a href="https://github.com/Carle-hub/LUNGCANCERDETECTION" class="project-link">Voir le projet →</a>
+            </div>
+            <div class="project-card">
+                <h3>Gestion Des personnelles</h3>
+                <p>Gérer les personnelles au sein d'une société avec la gestion des heures de travail journalier et la gestion des payes.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">SQLite</span>
+                    <span class="tag">scikit-learn, PyTorch, NumPy, pandas</span>
+                </div>
+                <a href="https://github.com/Carle-hub/gestionperso" class="project-link">Voir le projet →</a>
+            </div>
+            <div class="project-card">
+                <h3>School Management</h3>
+                <p>Ce projet est une application de gestion scolaire moderne développée avec Vue.js et Vuetify pour le frontend, et Node.js pour le backend.</p>
+                <div class="project-tags">
+                    <span class="tag">Vue.js</span>
+                    <span class="tag">Vuetify</span>
+                    <span class="tag">Node.js</span>
+                </div>
+                <a href="#" class="project-link">Voir le projet →</a>
+            </div>
+        </div>
+    </section>
+    <!-- Section Contact -->
+    <section id="contact" class="section">
+        <div class="contact">
+            <h2 class="section-title">Travaillons ensemble</h2>
+            <p>Vous avez un projet en tête ? N'hésitez pas à me contacter pour en discuter !</p>
+            <div class="contact-info">
+                <a href="mailto:tsilavocarle@gmail.com" class="contact-item">
+                    <span>📧</span>
+                    <span>tsilavocarle@gmail.com</span>
+                </a>
+                <a href="" class="contact-item">
+                    <span>💼</span>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="tel:+261345399435" class="contact-item">
+                    <span>📞</span>
+                    <span>+261345399435</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Carl Randranto. Conçu avec ❤️ et beaucoup de café.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
