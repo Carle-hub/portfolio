@@ -441,3 +441,86 @@ body {
     border-radius: 2px;
     transition: all 0.3s;
 }
+
+/* --- Améliorations Responsive --- */
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 1rem;
+    }
+    .burger {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+    .nav-links {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(255,255,255,0.98);
+        flex-direction: column;
+        gap: 2rem;
+        padding: 5rem 2rem 2rem 2rem;
+        border-radius: 0;
+        box-shadow: none;
+        z-index: 999;
+        display: none;
+        align-items: flex-start;
+    }
+    .dark-mode .nav-links {
+        background: rgba(0,0,0,0.98);
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .hero-content {
+        padding: 0 1rem;
+    }
+    .about-photo img {
+        width: 80px;
+        height: 80px;
+    }
+    .skills {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .project-card {
+        padding: 1rem;
+    }
+    .section {
+        padding: 20px 1%;
+    }
+    .contact {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    .footer {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+    img, .about-photo img {
+        max-width: 100%;
+        height: auto;
+    }
+    .cta-button {
+        padding: 10px 18px;
+        font-size: 1rem;
+    }
+    .section-title {
+        font-size: 1.1rem;
+    }
+    .hero h1 {
+        font-size: 1.3rem;
+    }
+}
+/* Focus visible pour accessibilité */
+a:focus, button:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+}
